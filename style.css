@@ -1,0 +1,480 @@
+/* 
+Theme Name: LABO XV 
+Version: 1.0.0
+Author: Jonathan MBAYA
+Description: Première version du site du Laboratoire XV siégeant au 353 Rue de Vaugirard 15e Arrondisement de Paris.Ce thème est  un template de site permettant d'informer les patients et de prévoir une prise de rendez-vous pour les différentes analyses du site.
+*/
+
+/* CSS Responsive Mobile */
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-collapse{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    #rdv-onglet{
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+
+        justify-content: space-around !important;
+        padding: 5em;
+    }
+
+    .row{
+        --bs-gutter-x : 0rem;
+    }
+    
+    .btn-rdv{
+        width: 100%;
+    }
+
+    .group-block{
+        display: flex;
+        align-items: center;
+    }
+
+    .block{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 30px 0px;
+        padding: 20px;
+    }
+
+    .block-reservation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px !important;
+    
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+    
+        border-radius: 20px;
+    
+        color: white;
+        background-color: #2E81DD;
+    }
+
+    .large-block, .line-block {
+        text-align: center;
+    }
+
+    .btn-faq {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        border:none;
+        padding: 30px;
+    }
+
+    .panneau-block, .group-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-faq{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn-laboconnect{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #2E81DD ;
+        padding: 20px;
+        margin-bottom: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4) ;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .text-footer{
+        margin-top: 50px !important;
+    }
+
+    .map {
+        text-align: center !important;
+    }
+
+    .navbar-toggle{
+        display: flex !important;
+        justify-content: flex-end !important;
+        color: #ffffff !important;
+        background-color: #ffffff !important;
+        right: 5px !important;
+        width: 100% !important;
+    }
+
+}
+
+/* CSS Normal */
+
+html, body {
+    font-family: 'Ruda', sans-serif !important;
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+
+    background-image: url('img/home-header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+/* .img-header{
+    position: absolute;
+    width: 100%;
+} */
+
+/* LOGO */
+
+.site__header__menu{
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+/* MENU */
+
+.menu {
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.navbar{
+
+    position: relative !important;
+    z-index: 1000 !important;
+    padding: 0rem !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.result-me{
+    background-color: #2E81DD;
+    border-radius: 10px;
+    padding:1px 1px 1px 1px ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+}
+
+ul, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+
+    list-style-type: none !important;
+    text-decoration: none !important;
+    color: white !important;
+    
+}
+
+#menu-main-menu li{
+
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    color : white;
+    text-align: center;
+}
+
+#menu-main-menu li a{
+    margin: 5px;
+}
+
+.navbar button{
+    border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+
+    color: white !important;
+}
+
+.navbar-toggler span{
+    border: none;
+    color: white;
+}
+
+/* Block Reservation */
+
+.row{
+    --bs-gutter-x : 0rem !important;
+}
+
+.reservation{
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.block-reservation{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 100px;
+
+    color: white;
+    background-color: #2E81DD;
+}
+
+.block-reservation-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px ;
+}
+
+.btn-rdv{
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btn-rdv-footer{
+    width: 100%;
+    height: 60px ;
+    border: none;
+    border-radius: 40px;
+
+}
+
+/* Les éléments du footer */
+
+footer {
+    text-align: center;
+    background-color: #1F61AB;
+    color: white;
+    padding: 20px;
+}
+
+
+
+/* PANNEAU 1 */
+
+section{
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.panneau-block{
+    position: relative !important;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.group-block{
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) ;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.btn-laboconnect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #2E81DD ;
+
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4) ;
+}
+
+/* Block Large & Line Block */
+
+.large-block {
+    color: #ffffff;
+    background-color: #2E81DD ;
+    margin-bottom: 50px;
+}
+
+.line-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.line-block .img-fluid img {
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+}
+
+#text-faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.btn-faq {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border:none;
+    padding: 30px;
+}
+
+/* Burger Menu */
+
+/* Navigation Menu */
+
+
+
+
+
+
+
+/* PAGE ANALYSE */
+
+.analyse-title{
+    background-color: #1F61AB !important;
+}
+
+.sub-analyse{
+    display: flex;
+    align-items: center;
+    background-color: #2E81DD;
+    color: #ffffff;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5em;
+}
+
+.center-block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+/* PAGE LABO */
+
+.block-presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.text-present{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.icon-natalio{
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+}
+
+#story{
+    margin: 20px;
+    font-size: 40px;
+    background-color: #2E81DD;
+    color: lightgray;
+}
+
+
+
+
+
+
+/* PAGE CONTACT */
+
+input{
+    border-color: 0.2px solid lightgray;
+}
+
+label{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.form-contact, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#btn-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:30% ;
+    margin-right:30% ;
+    background-color: #2E81DD;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+}
+
+#message{
+    height: 150px;
+    margin-bottom: 15px;
+}
